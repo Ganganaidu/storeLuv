@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="failed_directions">Failed to get driving direction</string>
+    <string name="no_connection">No connection</string>
+    <string name="switch_gps">Please turn ON GPS for accurate location</string>
+    <string name="location_notfound">Failed to find current location</string>
+
+    <!-- Map strings -->
+    <string name="direction_list">Direction list</string>
+
+    <!-- Map -->
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="line">Line</string>
+    <string name="direction_image">Direction image</string>
+    <string name="direction">Direction</string>
+
+</resources>

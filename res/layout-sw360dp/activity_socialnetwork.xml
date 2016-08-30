@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_storluv_background"
+    android:orientation="vertical" >
+
+    <!-- Main page with all button -->
+
+    <ScrollView
+        android:id="@+id/login_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/main_page_loginscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <!-- Username -->
+
+            <com.thisisswitch.storelove.fonts.EditText_light
+                android:id="@+id/login_username_editText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_username"
+                android:drawablePadding="5dp"
+                android:hint="@string/usernamehint"
+                android:inputType="text"
+                android:paddingRight="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15" />
+
+            <ImageView
+                android:id="@+id/divider_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_username_editText"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/ic_divider"
+                android:contentDescription="@string/app_name" />
+
+            <!-- Password -->
+
+            <com.thisisswitch.storelove.fonts.EditText_light
+                android:id="@+id/login_password_editText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/divider_username"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="5dp"
+                android:hint="@string/passwordhint"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15" />
+
+            <!-- line -->
+
+            <ImageView
+                android:id="@+id/divider_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_password_editText"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/ic_divider"
+                android:contentDescription="@string/app_name" />
+
+            <!-- login btn -->
+
+            <com.thisisswitch.storelove.fonts.Button_bold
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_login_btn"
+                android:text="@string/login"
+                android:textColor="@color/white" />
+            <!-- Forgot pwd -->
+
+            <com.thisisswitch.storelove.fonts.Textview_light
+                android:id="@+id/forgot_pwd_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="@string/forgotpwd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15" />
+
+            <!-- Google pluse -->
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/gpluse_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forgot_pwd_textView"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="80dp"
+                android:text="@string/twitter"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <!-- Facebook -->
+
+            <com.thisisswitch.storelove.fonts.Button_bold
+                android:id="@+id/facebook_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gpluse_button"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/com_facebook_button_blue_normal"
+                android:text="@string/facebook"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <com.thisisswitch.storelove.fonts.Textview_light
+                android:id="@+id/or_textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/facebook_button"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/dnthaveacc"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_12" />
+
+            <!-- sign up -->
+
+            <com.thisisswitch.storelove.fonts.Textview_bold
+                android:id="@+id/signup_textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/or_textView1"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/signup"
+                android:textColor="@color/purple"
+                android:textSize="@dimen/text_18"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/line_signup_textView2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/signup_textView2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="120dp"
+                android:background="@color/purple"
+                android:gravity="center" />
+
+            <!-- SKIP -->
+
+            <com.thisisswitch.storelove.fonts.Textview_bold
+                android:id="@+id/skip_textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_signup_textView2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/skip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- user reg -->
+
+    <ScrollView
+        android:id="@+id/reg_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.thisisswitch.storelove.widgets.CircleImageView
+                android:id="@+id/user_image_imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/storluv_photo" />
+
+            <com.thisisswitch.storelove.fonts.EditText_light
+                android:id="@+id/username_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_row_panel"
+                android:hint="@string/regusernamehint"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15" />
+
+            <com.thisisswitch.storelove.fonts.EditText_light
+                android:id="@+id/user_firstname_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/ic_row_panel"
+                android:hint="@string/firstnamehint"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15" />
+
+            <com.thisisswitch.storelove.fonts.EditText_light
+                android:id="@+id/user_lastname_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/ic_row_panel"
+                android:hint="@string/lastnamehint"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15" />
+
+                <com.thisisswitch.storelove.fonts.EditText_light
+                    android:id="@+id/user_password_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/ic_row_panel"
+                    android:hint="@string/passwordhint"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15" />
+
+                <com.thisisswitch.storelove.fonts.EditText_light
+                    android:id="@+id/user_confirm_password_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/ic_row_panel"
+                    android:hint="@string/confirmpasswordhint"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15" />
+
+                <com.thisisswitch.storelove.fonts.EditText_light
+                    android:id="@+id/user_mail_id_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/ic_row_panel"
+                    android:hint="@string/mailidhint"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15" />
+
+                <com.thisisswitch.storelove.fonts.EditText_light
+                    android:id="@+id/user_phone_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/ic_row_panel"
+                    android:hint="@string/phonenumberhint"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15" />
+
+                <com.thisisswitch.storelove.fonts.EditText_light
+                    android:id="@+id/user_location_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/ic_row_panel"
+                    android:hint="@string/locationhint"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15" />
+
+                <com.thisisswitch.storelove.fonts.Button_bold
+                    android:id="@+id/user_dob_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/ic_row_panel"
+                    android:hint="@string/dobhint"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15" />
+
+                <com.thisisswitch.storelove.fonts.Button_bold
+                    android:id="@+id/reg_submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_login_btn"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_15" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

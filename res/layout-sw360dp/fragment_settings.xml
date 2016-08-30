@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyheaderend"
+    android:orientation="vertical" >
+
+    <com.thisisswitch.storelove.fonts.Button_bold
+        android:id="@+id/profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:text="@string/profile"
+        android:textSize="@dimen/text_15" />
+
+    <com.thisisswitch.storelove.fonts.Button_bold
+        android:id="@+id/cange_region_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_15" />
+
+    <com.thisisswitch.storelove.fonts.Button_bold
+        android:id="@+id/about_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_15" />
+
+    <com.thisisswitch.storelove.fonts.Button_bold
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/purple"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_15" />
+
+</LinearLayout>

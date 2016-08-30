@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <net.appkraft.parallax.ParallaxScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res/com.thisisswitch.storelove"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:overScrollMode="never"
+        app:zoomRatio="5" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity" >
+
+            <RelativeLayout
+                android:id="@+id/image_relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".MainActivity" >
+
+                <ImageView
+                    android:id="@+id/main_imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_stub_icon" />
+            </RelativeLayout>
+
+            <!-- Store name -->
+
+            <com.thisisswitch.storelove.fonts.Textview_bold
+                android:id="@+id/store_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_relativeLayout1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="60dp"
+                android:padding="5dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold" />
+
+            <!-- Store like -->
+
+            <com.thisisswitch.storelove.fonts.Textview_bold
+                android:id="@+id/following_store_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/image_relativeLayout1"
+                android:layout_marginRight="5dp"
+                android:drawableTop="@drawable/ic_following"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/followstore"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/product_line_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/following_store_textView"
+                android:layout_marginTop="5dp"
+                android:background="#DFDFDF"
+                android:contentDescription="@null" />
+
+            <!-- product name -->
+
+            <com.thisisswitch.storelove.fonts.Textview_bold
+                android:id="@+id/prodcut_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_line_imageview"
+                android:layout_gravity="center"
+                android:layout_marginRight="60dp"
+                android:padding="5dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold" />
+
+            <!-- Product like -->
+
+            <com.thisisswitch.storelove.fonts.Textview_bold
+                android:id="@+id/like_product_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/product_line_imageview"
+                android:layout_marginRight="5dp"
+                android:drawableTop="@drawable/ic_like_oc"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/app_name"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold" />
+
+            <!-- Product price -->
+
+            <com.thisisswitch.storelove.fonts.Textview_light
+                android:id="@+id/price_textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prodcut_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black" />
+
+             <!-- TAG view -->
+           <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price_textView1"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/tag_container_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <!-- desc -->
+            <com.thisisswitch.storelove.fonts.Textview_light
+                android:id="@+id/product_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/horizontalScrollView1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/product_des"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15" />
+        </RelativeLayout>
+    </net.appkraft.parallax.ParallaxScrollView>
+
+    <!-- bottom bar with mail and call button -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/greyheader"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <com.thisisswitch.storelove.fonts.Textview_bold
+            android:id="@+id/call_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:drawableTop="@drawable/call_background"
+            android:gravity="center"
+            android:text="@string/call"
+            android:textColor="@color/purple" />
+
+        <ImageView
+            android:id="@+id/share_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/storluv_sidebar_base_oc"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/ic_social_share_" />
+
+        <com.thisisswitch.storelove.fonts.Textview_bold
+            android:id="@+id/mail_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:drawableTop="@drawable/mail_background"
+            android:gravity="center"
+            android:text="@string/mail"
+            android:textColor="@color/purple" />
+    </LinearLayout>
+
+</RelativeLayout>

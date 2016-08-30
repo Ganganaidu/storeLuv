@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fallowing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:orientation="horizontal" >
+
+        <com.thisisswitch.storelove.fonts.Button_bold
+            android:id="@+id/fallowing_store_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ab_stacked_solid_storelove"
+            android:text="@string/storeslike"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@color/greyheaderend" />
+
+        <com.thisisswitch.storelove.fonts.Button_bold
+            android:id="@+id/fallowing_product_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ab_stacked_solid_storelove"
+            android:text="@string/productslike"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/myfeed_producit_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fallowing_layout"
+        android:background="#ddd"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="8dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/myfeed_stores_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fallowing_layout"
+        android:background="#ddd"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="8dp" />
+
+    <com.thisisswitch.storelove.widgets.CustomProgressBar
+        android:id="@+id/myfeed_customprogressbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

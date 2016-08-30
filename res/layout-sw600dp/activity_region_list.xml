@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_str_background"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <com.thisisswitch.storelove.fonts.Textview_bold
+        android:id="@+id/seleted_region_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greyheader" />
+
+    <com.thisisswitch.storelove.fonts.Button_bold
+        android:id="@+id/checkgps_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nearme"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_15"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/region_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:divider="@null" >
+    </ListView>
+
+</LinearLayout>

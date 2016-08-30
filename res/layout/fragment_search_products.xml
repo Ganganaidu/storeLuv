@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/serach_editext_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.thisisswitch.storelove.fonts.EditText_light
+            android:id="@+id/search_editText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_avatar_bar"
+            android:ems="10"
+            android:hint="@string/searchname"
+            android:imeOptions="actionDone"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_15"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cross_imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/search_editText"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/search_cross" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ddd"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="8dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <com.thisisswitch.storelove.widgets.CustomProgressBar
+            android:id="@+id/customProgressBar1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <com.thisisswitch.storelove.fonts.Textview_bold
+            android:id="@+id/search_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ddd" >
+
+    <ImageView
+        android:id="@+id/row_imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_stub_icon" />
+
+    <!-- Rating imageview -->
+
+    <ImageView
+        android:id="@+id/rating_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:src="@drawable/rating_background"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/row_imageView1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:alpha="0.5"
+        android:background="@color/white"
+        android:paddingBottom="5dp" >
+
+        <!-- price -->
+
+        <com.thisisswitch.storelove.fonts.Textview_light
+            android:id="@+id/price_textView1"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_19"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/devider_imageview_last"
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/price_textView1"
+            android:layout_marginLeft="10dp"
+            android:background="#DFDFDF"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+        <!-- title -->
+
+        <com.thisisswitch.storelove.fonts.Textview_light
+            android:id="@+id/title_textView1"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/devider_imageview_last"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18"
+            android:textStyle="bold" />
+
+        <!-- like count view -->
+
+        <TextView
+            android:id="@+id/like_count_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_like_icon"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/greyheaderend" />
+
+</RelativeLayout>

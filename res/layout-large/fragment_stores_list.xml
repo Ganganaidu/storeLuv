@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ptr_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/top_btns_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <com.thisisswitch.storelove.fonts.Button_bold
+            android:id="@+id/allstores_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ab_stacked_solid_storelove"
+            android:text="@string/allstores"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyheaderend" />
+
+        <com.thisisswitch.storelove.fonts.Button_bold
+            android:id="@+id/stores_nearme_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ab_stacked_solid_storelove"
+            android:text="@string/nearme"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyheaderend" />
+
+        <com.thisisswitch.storelove.fonts.Button_bold
+            android:id="@+id/stores_ifallow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ab_stacked_solid_storelove"
+            android:text="@string/ifollowstores"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top_btns_layout"
+        android:visibility="visible" >
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/store_listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map_container"
+        android:background="#ddd"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="8dp"
+        android:visibility="gone" >
+    </ListView>
+
+    <com.thisisswitch.storelove.widgets.CustomProgressBar
+        android:id="@+id/customProgressBar1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

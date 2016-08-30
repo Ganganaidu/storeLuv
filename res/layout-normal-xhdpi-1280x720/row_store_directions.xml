@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_whole"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/titles_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical" >
+
+        <com.thisisswitch.storelove.fonts.Textview_bold
+            android:id="@+id/store_name_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <com.thisisswitch.storelove.fonts.Textview_light
+            android:id="@+id/store_address_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:padding="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <com.thisisswitch.storelove.fonts.Textview_bold
+        android:id="@+id/distance_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

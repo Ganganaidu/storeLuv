@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Storluv</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="close">Close</string>
+    <string name="alert_dialog_ok">OK</string>
+
+    <!-- Login -->
+    <string name="login">Log in</string>
+    <string name="usernamehint">Enter user mail address</string>
+    <string name="regusernamehint">Enter user name</string>
+    <string name="passwordhint">Enter password</string>
+    <string name="firstnamehint">Enter first name</string>
+    <string name="lastnamehint">Enter last name</string>
+    <string name="confirmpasswordhint">Confirm password</string>
+    <string name="mailidhint">Enter mail id</string>
+    <string name="phonenumberhint">Enter  phone number</string>
+    <string name="locationhint">Enter location(hyd)</string>
+    <string name="dobhint">Enter  birthday date</string>
+    <string name="submit">TAKE ME IN</string>
+    <string name="dnthaveacc">or</string>
+    <string name="signup">- Sign up -</string>
+    <string name="skip">SKIP FOR NOW</string>
+    <string name="forgotpwd">Forgot Password?</string>
+
+    <!-- crop -->
+    <string name="rotate">Rotate</string>
+    <string name="crop">Crop</string>
+    
+    <!-- Stores -->
+    <string name="allstores">All Stores</string>
+    <string name="ifollowstores">Followed</string>
+    <string name="nearme">Nearby</string>
+    <string name="followstore">Follow</string>
+    
+    <!-- Slide menu -->
+    <string name="viewprofile">View Profile &amp; History</string>
+    <string name="username">User name</string>
+    <string name="changelocation">Change Location</string>
+
+    <!--  -->
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <string name="price">Price</string>
+    <string name="call">CALL STORE</string>
+    <string name="mail">MAIL STORE</string>
+    <string name="location">Store Location</string>
+    <string name="description">Description</string>
+    <string name="storepick">Store Pickup</string>
+    <string name="delivery">Delivery</string>
+    <string name="ptr_loading">Loading</string>
+
+    <!-- about us -->
+    <string name="storeloveweb">www.storluv.com</string>
+    <string name="aboutustext">Want to list your product in storluv? </string>
+    <string name="aboutusphone">+9140 65815300 </string>
+    <string name="aboutusmail">reachus@storluv.com</string>
+    <string name="web">www.storluv.com</string>
+    <string name="switchlogotext1">made with </string>
+    <string name="switchlogotext2">in hyderabad</string>
+
+    <!-- Search page -->
+    <string name="searchname"> Jewellery, Bags, etc</string>
+    <string name="storeslike"> My Stores</string>
+    <string name="productslike"> My Products</string>
+
+    <!-- Facebook details -->
+    <string name="fb_app_id">246525095510352</string>
+    <string name="facebook">Log in with Facebook</string>
+    <string name="twitter">Log in with Gpluse</string>
+
+    <!-- Twitter details -->
+    <string name="tt_consumer_key">OXwgbSoURG4N1q1m73XkMw</string>
+    <string name="tt_consumer_secret_key">5DPzePQ76aeKAVd7lKBVt43XDbFtyNpBIVOKZK644E4</string>
+    
+    <!-- Settings -->
+    <string name="profile">Profile</string>
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_str_background"
+    android:orientation="vertical" >
+
+    <com.thisisswitch.storelove.widgets.ScaleImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/ic_str_help3" />
+
+    <ImageView
+        android:id="@+id/skip_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/ic_btn_icon"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>
